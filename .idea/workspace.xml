@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a817ed96-61af-413b-881e-9cce32e569d7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="2webmarket-master" is-module-sdk="true">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+    <option name="myUseModuleSdk" value="true" />
+    <option name="myModuleName" value="2webmarket-master" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2WrV293dD23Aa9OeciFR6sB5RVQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ppap0/Desktop/proiectnou/master4/home/static&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="2webmarket-master" is-module-sdk="true" working-directory="$PROJECT_DIR$">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="2webmarket-master" />
+        <option name="myWorkingDirectory" value="$PROJECT_DIR$" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\home\static" />
+      <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\static\theme_material_kit\static" />
+      <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\staticfiles\css" />
+      <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\static" />
+      <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\home\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\home\static" />
+      <recent name="C:\Users\ppap0\Desktop\proiectnou\master4\staticfiles\js" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django Server.Unnamed">
+    <configuration name="Unnamed" type="DatabaseScript" nameIsGenerated="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="Python.DjangoServer" factoryName="Django server" nameIsGenerated="true">
+      <module name="2webmarket-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\ppap0\Desktop\proiectnou\df71a8f3-2e82-4290-81a4-8e2ff7710ac3\venv\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Python 3.11 (df71a8f3-2e82-4290-81a4-8e2ff7710ac3)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Database Script.Unnamed" />
+      <item itemvalue="Django Server.Unnamed" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a817ed96-61af-413b-881e-9cce32e569d7" name="Changes" comment="" />
+      <created>1697490476247</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697490476247</updated>
+      <workItem from="1697490477325" duration="9442000" />
+      <workItem from="1697578556002" duration="4553000" />
+      <workItem from="1697583559823" duration="85000" />
+      <workItem from="1697583682952" duration="4000" />
+      <workItem from="1697707879923" duration="12706000" />
+      <workItem from="1697789852099" duration="3569000" />
+      <workItem from="1697804575571" duration="1119000" />
+      <workItem from="1697921708097" duration="1413000" />
+      <workItem from="1697963340688" duration="17430000" />
+      <workItem from="1697991148692" duration="11051000" />
+      <workItem from="1698047040598" duration="654000" />
+      <workItem from="1698137389747" duration="2023000" />
+      <workItem from="1707125234182" duration="5318000" />
+      <workItem from="1707202559240" duration="15749000" />
+      <workItem from="1707288767418" duration="7318000" />
+      <workItem from="1707375133833" duration="6935000" />
+      <workItem from="1707474342146" duration="6291000" />
+      <workItem from="1707674504049" duration="3513000" />
+      <workItem from="1707720433241" duration="2781000" />
+      <workItem from="1707747401327" duration="594000" />
+      <workItem from="1708077319321" duration="1815000" />
+      <workItem from="1708427216033" duration="662000" />
+      <workItem from="1708508020882" duration="733000" />
+      <workItem from="1708597849086" duration="3145000" />
+      <workItem from="1708689022005" duration="45000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
