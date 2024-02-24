@@ -1,6 +1,6 @@
 {% include 'pages/top.html' %}
 {% load static %}
-        <style>
+<style>
             /* start catalog-items */
 .catalog-items {
 	margin-top: 60px;
@@ -150,27 +150,23 @@
         border-color: #777777;
         background-color: #777777;
     }
+    @media (max-width: 767px) {
+    ul {
+        padding-right: 40px; /* Apply padding-right only on mobile phones */
+    }
 
+    ul li {
+        display: block; /* Display list items one per line */
+        margin-bottom: 10px; /* Add margin between list items */
+    }
+}
 
 </style>
-
-
-<div class="site-substance " id="site-substance" style="padding-bottom: 100px">
-    <div class="container">
-
-        <main class="site-main site-main--reading gutenberg-overflow">
-            <div class="post-28 page type-page status-publish hentry" id="post-28">
-
-    <section class="content">
-    <div class="container__head" style="font-family: 'Helvetica Neue Condensed', sans-serif;">
-        <h2 style="font-weight: 400;font-size: 18px"><a href="{% url 'index' %}" class="category-link">{{ category.name }}  /  </a><a href="{% url 'category_detail' category_name=category.name %}" class="category-link">{{ brand.name }}  /  <a href="{% url 'model_list' category_name=category.name brand_name=brand.name %}" class="category-link">{{ model.name }}</a>  </h2>
-        <h1 style="font-family: 'Helvetica Neue Condensed', sans-serif; letter-spacing: .18rem; text-transform: uppercase; font-weight: 800; color: #202124">Items</h1>
-        </div>
-       <section class="catalog-items">
-	<div class="container">
-    {% for item in item_list %}
+{% if results %}
+    <ul>
+        {% for item in results %}
          <div class="product-list-item--suggestion rounded-bordered h-100 d-flex flex-column">
-            <a href="/bosch/1-987-429-404-17634" class="text-center">
+            <a href="" class="text-center">
                 <img src="{{ item.image|safe }}" alt="{{ item.name }}" width="115" height="115" class="img-fluid" loading="lazy">
             </a>
                             <a href="/bosch/1-987-429-404-17634" class="fw-bold mt-2 text-black">
@@ -209,19 +205,8 @@
 
 	</div>
         {% endfor %}
-    </div>
-       </section>
-
-</section>
-	</div>
-    </section>
-
-    <!--  -->
-
-</div>
-        </main>
-
-    </div>
-</div>
-
+    </ul>
+{% else %}
+    <p>No results found.</p>
+{% endif %}
 {% include 'pages/footer.html' %}

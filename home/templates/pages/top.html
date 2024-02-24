@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,24 +11,24 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+<link rel="stylesheet" href="{% static 'css/jquery.timepicker.css' %}">
 
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
+<link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+<link rel="stylesheet" href="{% static 'css/style2.css' %}">
 
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 		<div class="wrap">
 	    <div class="container">
 				<div class="row justify-content-between">
 					<div class="col-md-3 d-flex align-items-center">
-						<a class="navbar-brand" href="index.html">Autorepair<span>.</span></a>
+						<a class="navbar-brand" href="index.html">Auto-parts<span>.</span></a>
 					</div>
 					<div class="col-md-7">
 						<div class="row">
@@ -63,152 +65,40 @@
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
 	      </button>
-				<form action="#" class="searchform order-lg-last">
-          <div class="form-group d-flex">
-            <input type="text" class="form-control pl-3" placeholder="Search">
-            <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
-          </div>
-        </form>
+				<form action="{% url 'search_results' %}" method="GET" class="searchform order-lg-last">
+    <div class="form-group d-flex">
+        <input type="text" name="q" class="form-control pl-3" placeholder="Search">
+        <button type="submit" class="form-control search"><span class="fa fa-search"></span></button>
+    </div>
+</form>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav mr-auto">
-	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	        	<li class="nav-item"><a href="project.html" class="nav-link">Project</a></li>
-	        	<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        	<li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+	        	{% for category in categories|slice:":4" %}
+                    <li class="nav-item"> <a href="{% url 'category_detail' category.name %}" class="nav-link">{{ category.name }}</a></li>
+                            {% endfor %}
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
-    <div class="hero-wrap">
-	    <div class="home-slider owl-carousel">
-	      <div class="slider-item" style="background-image:url(images/bg_1.jpg);">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row no-gutters slider-text align-items-center justify-content-start">
-		          <div class="col-md-6 ftco-animate">
-		          	<div class="text w-100">
-		          		<h2>We are best car repair services</h2>
-			            <h1 class="mb-4">Make your car last longer</h1>
-			            <p><a href="#" class="btn btn-primary">Book an appointment</a></p>
-		            </div>
-		          </div>
-		        </div>
-	        </div>
-	      </div>
 
-	      <div class="slider-item" style="background-image:url(images/bg_2.jpg);">
-	      	<div class="overlay"></div>
-	        <div class="container">
-	          <div class="row no-gutters slider-text align-items-center justify-content-start">
-		          <div class="col-md-6 ftco-animate">
-		          	<div class="text w-100">
-		          		<h2>We care about your car</h2>
-			            <h1 class="mb-4">It's time to come to repair your car</h1>
-			            <p><a href="#" class="btn btn-primary">Book an appointment</a></p>
-		            </div>
-		          </div>
-		        </div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
 
-		<section class="intro">
-			<div class="container intro-wrap">
-				<div class="row no-gutters">
-					<div class="col-md-12 col-lg-9 bg-intro d-sm-flex align-items-center align-items-stretch">
-						<div class="intro-box d-flex align-items-center">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<i class="flaticon-repair"></i>
-							</div>
-							<h2 class="mb-0">Are you ready? <span>Let's repair it now!</span></h2>
-						</div>
-						<a href="#" class="bg-primary btn-custom d-flex align-items-center"><span>Book an Appointment</span></a>
-					</div>
-				</div>
-			</div>
-		</section>
 
-    <section class="ftco-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5 mb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">We offer Services</span>
-            <h2>Our car services</h2>
-          </div>
-        </div>
-    		<div class="row">
-          <div class="col-md-4 services ftco-animate">
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-car-service"></span>
-              </div>
-              <div class="media-body pl-3">
-                <h3 class="heading">Oil change</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-tyre"></span>
-              </div>
-              <div class="media-body pl-3">
-                <h3 class="heading">Tire Change</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
 
-          </div>
-          <div class="col-md-4 services ftco-animate">
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-battery"></span>
-              </div>
-              <div class="media-body pl-3">
-                <h3 class="heading">Batteries</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-car-engine"></span>
-              </div>
-              <div class="media-body pl-3">
-                <h3 class="heading">Engine Repair</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 services ftco-animate">
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-tow-truck"></span>
-              </div>
-              <div class="media-body pl-3">
-                <h3 class="heading">Tow Truck</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-            <div class="d-block d-flex">
-              <div class="icon d-flex justify-content-center align-items-center">
-            		<span class="flaticon-repair"></span>
-              </div>
-              <div class="media-body pl-3">
-                <h3 class="heading">Car Maintenance</h3>
-                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
-                <p><a href="#" class="btn-custom">Read more</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-    	</div>
-    </section>
+ <script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+<script src="{% static 'js/jquery.timepicker.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/scrollax.min.js' %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=false"></script> <!-- Replace YOUR_API_KEY with your Google Maps API key -->
+<script src="{% static 'js/google-map.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>

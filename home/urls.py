@@ -4,6 +4,7 @@ from django.contrib import admin
 from django.urls import path
 
 from . import views
+from .views import search_view
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -11,6 +12,7 @@ urlpatterns = [
     path('/<str:category_name>/', views.category_detail, name='category_detail'),
     path('/<str:category_name>/<str:brand_name>/models/', views.model_list, name='model_list'),
     path('/<str:category_name>/<str:brand_name>/<str:model_name>/items/', views.items, name='items'),
+    path('search/', search_view, name='search_results'),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

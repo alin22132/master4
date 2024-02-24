@@ -55,4 +55,15 @@ def items(request, category_name, brand_name, model_name):
                   {'item_list': item_list, 'category': category, 'brand': brand, 'model': model,
                    'categories': categories})
 
+
+def search_view(request):
+    categories = Category.objects.all()[:5]
+    query = request.GET.get('q')
+    if query:
+        results = Item_list.objects.filter(name__icontains=query)
+    else:
+        results = None
+    return render(request, 'pages/search_results.html', {'results': results, 'categories': categories})
+
+
 # TODO Finish the links and then make a post form and thats all (post form to mail, ask for mail)
