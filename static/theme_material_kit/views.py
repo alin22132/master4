@@ -9,6 +9,9 @@ from django.contrib.auth import views as auth_views
 
 # Create your views here.
 
+def handler404(request, exception):
+    return render(request, 'pages/404.html', status=404)
+
 
 # Authentication
 def registration(request):
@@ -145,5 +148,3 @@ def modals(request):
 
 def tooltips(request):
     return render(request, 'sections/attention-catchers/tooltips-popovers.html')
-
-

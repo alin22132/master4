@@ -66,4 +66,7 @@ def search_view(request):
     return render(request, 'pages/search_results.html', {'results': results, 'categories': categories})
 
 
+def handler404page(request, exception):
+    return render(request, 'pages/404.html', status=404)
+
 # TODO Finish the links and then make a post form and thats all (post form to mail, ask for mail)
